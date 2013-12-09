@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 337
+  Height = 407
+  Top = 136
+  Width = 740
+  Caption = 'Form1'
+  ClientHeight = 407
+  ClientWidth = 740
+  LCLVersion = '1.0.12.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 24
+    Top = 24
+    Width = 118
+    Caption = 'Левая граница'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 24
+    Top = 56
+    Width = 128
+    Caption = 'Правая граница'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 24
+    Top = 88
+    Width = 71
+    Caption = 'Точность'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 192
+    Height = 23
+    Top = 25
+    Width = 80
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 192
+    Height = 23
+    Top = 57
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 192
+    Height = 23
+    Top = 89
+    Width = 80
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 120
+    Width = 246
+    Caption = 'Вычислить методом Ньютона'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 24
+    Height = 25
+    Top = 152
+    Width = 246
+    Caption = 'Вычислить методом хорд'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Chart1: TChart
+    Left = 328
+    Height = 168
+    Top = 16
+    Width = 344
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+  object Memo1: TMemo
+    Left = 24
+    Height = 176
+    Top = 216
+    Width = 246
+    ScrollBars = ssVertical
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 328
+    Height = 24
+    Top = 208
+    Width = 334
+    Caption = 'Результат вычисления методом Ньютона:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 328
+    Height = 24
+    Top = 280
+    Width = 302
+    Caption = 'Результат вычисления методом хорд:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 328
+    Height = 1
+    Top = 240
+    Width = 1
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 328
+    Height = 1
+    Top = 312
+    Width = 1
+    ParentColor = False
+  end
+  object Button3: TButton
+    Left = 24
+    Height = 25
+    Top = 184
+    Width = 246
+    Caption = 'Очистить'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+end
